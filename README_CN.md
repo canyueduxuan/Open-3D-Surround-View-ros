@@ -44,7 +44,15 @@
 
 ## 快速开始
 
-### 1）启动 Unity 游戏
+### 1）克隆此项目(注意克隆子模块)
+
+```
+git clone https://github.com/canyueduxuan/Open-3D-Surround-View-ros.git
+cd Open-3D-Surround-View-ros
+git submodule update --init --recursive
+```
+
+### 2）启动 Unity 游戏
 
 ```bash
 cd unity_game
@@ -55,7 +63,7 @@ cd unity_game
 
 ![scene](resource/scene.jpg)
 
-### 2）启动 [ROS-TCP-Endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint)
+### 3）启动 [ROS-TCP-Endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint)
 注意游戏脚本默认ros ip 127.0.0.1:10000，若与ROS-TCP-Endpoint的配置不一样，需要修改ROS-TCP-Endpoint的launch文件。
 
 ```bash
@@ -64,7 +72,7 @@ source devel/setup.bash
 roslaunch ros_tcp_endpoint endpoint.launch
 ```
 
-### 3）构建 BEV 查找表（LUT）与输出
+### 4）构建 BEV 查找表（LUT）与输出
 
 在仓库根目录执行：
 
@@ -73,7 +81,7 @@ cd python_scripts
 python build_bev.py
 ```
 
-### 4）运行 test_bev_ros 节点
+### 5）运行 test_bev_ros 节点
 
 ```bash
 cd python_scripts

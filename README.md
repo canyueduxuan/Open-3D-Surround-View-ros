@@ -44,7 +44,16 @@ Key Python files:
 
 ## Quick Start
 
-### 1) Start the Unity game
+### 1) Clone this project(Please clone the submodule)
+
+```
+git clone https://github.com/canyueduxuan/Open-3D-Surround-View-ros.git
+cd Open-3D-Surround-View-ros
+git submodule update --init --recursive
+
+```
+
+### 2) Start the Unity game
 
 ```bash
 cd unity_game
@@ -55,7 +64,7 @@ You should see the scene:
 
 ![scene](resource/scene.jpg)
 
-### 2) Start [ROS-TCP-Endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint)
+### 3) Start [ROS-TCP-Endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint)
 
 Note: the game script uses ROS IP `127.0.0.1:10000` by default. If your ROS-TCP-Endpoint uses different settings, update its launch file.
 
@@ -65,7 +74,7 @@ source devel/setup.bash
 roslaunch ros_tcp_endpoint endpoint.launch
 ```
 
-### 3) Build BEV lookup tables (LUT) and outputs
+### 4) Build BEV lookup tables (LUT) and outputs
 
 From repository root:
 
@@ -74,7 +83,7 @@ cd python_scripts
 python build_bev.py
 ```
 
-### 4) Run the `test_bev_ros` node
+### 5) Run the `test_bev_ros` node
 
 ```bash
 cd python_scripts

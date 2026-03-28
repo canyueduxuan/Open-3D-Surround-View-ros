@@ -1,0 +1,3 @@
+[submodule "python_scripts/camera_models"]
+    path = python_scripts/camera_models
+    url = https://github.com/canyueduxuan/camera-models.git
