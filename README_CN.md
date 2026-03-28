@@ -15,6 +15,13 @@
 
 ![3d_bev](resource/3d_bev.gif)
 
+## 原始鱼眼图片
+
+![cam1](python_scripts/test_sample/cam1.png)
+![cam2](python_scripts/test_sample/cam2.png)
+![cam3](python_scripts/test_sample/cam3.png)
+![cam4](python_scripts/test_sample/cam4.png)
+
 ## 项目结构
 
 - Unity 游戏目录：[unity_game/](unity_game/)

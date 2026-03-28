@@ -15,6 +15,13 @@ This repository contains:
 
 ![3d_bev](resource/3d_bev.gif)
 
+## Original fisheye images
+
+![cam1](python_scripts/test_sample/cam1.png)
+![cam2](python_scripts/test_sample/cam2.png)
+![cam3](python_scripts/test_sample/cam3.png)
+![cam4](python_scripts/test_sample/cam4.png)
+
 ## Project Structure
 
 - Unity game directory: [unity_game/](unity_game/)
