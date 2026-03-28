@@ -1,0 +1,10 @@
+.bev_sim
+.python_scripts/calibration/extrinsics
+.python_scripts/calibration/intrinsics
+.python_scripts/data
+# Python cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.python_scripts/camera_models/__pycache__/
